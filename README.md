@@ -1,0 +1,43 @@
+# The [gruvbox][] vim colorscheme, optimized for loading speed
+
+On my computer, the default [gruvbox colorscheme][gruvbox] takes 12.000ms to
+load when opening an empty buffer (nearly twice as long as loading all of
+`$VIMRUNTIME`, and longer than loading all other 20 plugins combined) while
+this version takes 0.825ms (slightly faster than vim-fugitive).
+
+## How?
+
+The main gain is achieved by having the vim colorscheme script be a list of
+"raw" `:highlight` commands instead of making function calls that dynamically
+build strings of highlight commands and `:execute` them.
+
+Further gains are made by moving filetype-specific highlights to `ftplugin`s,
+and by using the "raw" version of the `lightline` palette instead of
+dynamically building it with calls to `synIDattr()` and `hlID()`.
+
+This is done by configuring the colors and highlights in a YAML template, and
+using it to compile optimized versions of `colors/gruvbox-custom.vim`,
+`after/ftplugin/*.vim`, and
+`autoload/lightline/colorscheme/gruvbox_custom.vim`.
+
+## Caveats
+
+There is no attempt at keeping any customizations: most of what I don't
+personally need has been removed.
+
+- Only GUI colors are defined (so it only works with `'termguicolors'`)
+- Only the high-contrast dark-background variant is defined
+- No configuration for plugins and file types I don't personally use
+- No customizations through [`g:gruvbox_*` options][gruvbox-config]
+- A few deviations from the original theme (some taken from
+  [gruvbox-community][gruvbox-community]'s fork)
+
+It should be possible to support customizations by adding new attributes to the
+highlight records in the YAML template and modifying
+`build/generate_colorscheme.py` to emit different commands based on them
+wrapped in if-else blocks.
+
+
+[gruvbox]: https://github.com/morhetz/gruvbox
+[gruvbox-community]: https://github.com/gruvbox-community/gruvbox
+[gruvbox-config]: https://github.com/morhetz/gruvbox/wiki/Configuration

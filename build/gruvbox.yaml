@@ -1,0 +1,1062 @@
+# vim: foldmethod=marker foldlevel=0
+---
+colors:  # {{{
+  palette:
+    dark0_hard: "#1d2021"
+    dark0: "#282828"
+    dark0_soft: "#32302f"
+    dark1: "#3c3836"
+    dark2: "#504945"
+    dark3: "#665c54"
+    dark4: "#7c6f64"
+    gray_245: "#928374"
+    gray_244: "#928374"
+    light0_hard: "#f9f5d7"
+    light0: "#fbf1c7"
+    light0_soft: "#f2e5bc"
+    light1: "#ebdbb2"
+    light2: "#d5c4a1"
+    light3: "#bdae93"
+    light4: "#a89984"
+    bright_red: "#fb4934"
+    bright_green: "#b8bb26"
+    bright_yellow: "#fabd2f"
+    bright_blue: "#83a598"
+    bright_purple: "#d3869b"
+    bright_aqua: "#8ec07c"
+    bright_orange: "#fe8019"
+    neutral_red: "#cc241d"
+    neutral_green: "#98971a"
+    neutral_yellow: "#d79921"
+    neutral_blue: "#458588"
+    neutral_purple: "#b16286"
+    neutral_aqua: "#689d6a"
+    neutral_orange: "#d65d0e"
+    faded_red: "#9d0006"
+    faded_green: "#79740e"
+    faded_yellow: "#b57614"
+    faded_blue: "#076678"
+    faded_purple: "#8f3f71"
+    faded_aqua: "#427b58"
+    faded_orange: "#af3a03"
+
+  aliases:
+    bg0: dark0_hard
+    bg1: dark1
+    bg2: dark2
+    bg3: dark3
+    bg4: dark4
+    gray: gray_245
+    fg0: light0
+    fg1: light1
+    fg2: light2
+    fg3: light3
+    fg4: light4
+    red: bright_red
+    green: bright_green
+    yellow: bright_yellow
+    blue: bright_blue
+    purple: bright_purple
+    aqua: bright_aqua
+    orange: bright_orange
+
+  terminal:
+    color_0: dark0_hard
+    color_1: neutral_red
+    color_2: neutral_green
+    color_3: neutral_yellow
+    color_4: neutral_blue
+    color_5: neutral_purple
+    color_6: neutral_aqua
+    color_7: light4
+    color_8: gray_245
+    color_9: bright_red
+    color_10: bright_green
+    color_11: bright_yellow
+    color_12: bright_blue
+    color_13: bright_purple
+    color_14: bright_aqua
+    color_15: light1
+# }}}
+
+highlights:  # {{{
+
+  # Gruvbox highlights {{{
+  GruvboxFg0:
+    fg: fg0
+  GruvboxFg1:
+    fg: fg1
+  GruvboxFg2:
+    fg: fg2
+  GruvboxFg3:
+    fg: fg3
+  GruvboxFg4:
+    fg: fg4
+  GruvboxGray:
+    fg: gray
+  GruvboxBg0:
+    fg: bg0
+  GruvboxBg1:
+    fg: bg1
+  GruvboxBg2:
+    fg: bg2
+  GruvboxBg3:
+    fg: bg3
+  GruvboxBg4:
+    fg: bg4
+  GruvboxRed:
+    fg: red
+  GruvboxRedBold:
+    fg: red
+    gui: bold
+  GruvboxGreen:
+    fg: green
+  GruvboxGreenBold:
+    fg: green
+    gui: bold
+  GruvboxYellow:
+    fg: yellow
+  GruvboxYellowBold:
+    fg: yellow
+    gui: bold
+  GruvboxBlue:
+    fg: blue
+  GruvboxBlueBold:
+    fg: blue
+    gui: bold
+  GruvboxPurple:
+    fg: purple
+  GruvboxPurpleBold:
+    fg: purple
+    gui: bold
+  GruvboxAqua:
+    fg: aqua
+  GruvboxAquaBold:
+    fg: aqua
+    gui: bold
+  GruvboxOrange:
+    fg: orange
+  GruvboxOrangeBold:
+    fg: orange
+    gui: bold
+  GruvboxRedSign:
+    fg: red
+    bg: bg1
+  GruvboxGreenSign:
+    fg: green
+    bg: bg1
+  GruvboxYellowSign:
+    fg: yellow
+    bg: bg1
+  GruvboxBlueSign:
+    fg: blue
+    bg: bg1
+  GruvboxPurpleSign:
+    fg: purple
+    bg: bg1
+  GruvboxAquaSign:
+    fg: aqua
+    bg: bg1
+  # }}}
+
+  # Colorscheme {{{
+  # General UI {{{
+  Normal:
+    fg: fg1
+    bg: bg0
+  CursorLine:
+    bg: bg1
+  CursorColumn:
+    link: CursorLine
+  TabLineFill:
+    fg: bg4
+    bg: bg1
+  TabLineSel:
+    fg: green
+    bg: bg1
+  TabLine:
+    link: TabLineFill
+  MatchParen:
+    bg: bg3
+    gui: bold
+  ColorColumn:
+    bg: bg1
+  Conceal:
+    fg: blue
+    bg: NONE
+  CursorLineNr:
+    fg: yellow
+    bg: bg1
+  NonText:
+    link: GruvboxBg2
+  SpecialKey:
+    link: GruvboxFg4
+  Visual:
+    bg: bg3
+    gui: inverse
+  VisualNOS:
+    link: Visual
+  Search:
+    fg: yellow
+    bg: bg0
+    gui: inverse
+  IncSearch:
+    fg: orange
+    bg: bg0
+    gui: inverse
+  QuickFixLine:
+    fg: bg0
+    bg: yellow
+    gui: bold
+  Underlined:
+    fg: blue
+    gui: underline
+  StatusLine:
+    fg: bg2
+    bg: fg1
+    gui: inverse
+  StatusLineNC:
+    fg: bg1
+    bg: fg4
+    gui: inverse
+  VertSplit:
+    fg: bg3
+    bg: bg0
+  WildMenu:
+    fg: blue
+    bg: bg2
+    gui: bold
+  Directory:
+    link: GruvboxGreenBold
+  Title:
+    link: GruvboxGreenBold
+  ErrorMsg:
+    fg: bg0
+    bg: red
+    gui: bold
+  MoreMsg:
+    link: GruvboxYellowBold
+  ModeMsg:
+    link: GruvboxYellowBold
+  Question:
+    link: GruvboxOrangeBold
+  WarningMsg:
+    link: GruvboxRedBold
+  # }}}
+
+  # Gutter {{{
+  LineNr:
+    fg: bg4
+  SignColumn:
+    fg: NONE
+    bg: bg1
+  Folded:
+    fg: gray
+    bg: bg1
+    gui: italic
+  FoldColumn:
+    fg: gray
+    bg: bg1
+  # }}}
+
+  # Cursor {{{
+  Cursor:
+    fg: NONE
+    bg: NONE
+    gui: inverse
+  vCursor:
+    link: Cursor
+  iCursor:
+    link: Cursor
+  lCursor:
+    link: Cursor
+  # }}}
+
+  # Syntax highlighting {{{
+  Special:
+    link: GruvboxOrange
+  Comment:
+    fg: gray
+    gui: italic
+  Todo:
+    fg: fg
+    bg: bg
+    gui: bold,italic
+  Error:
+    fg: red
+    bg: bg
+    gui: bold,inverse
+  Statement:
+    link: GruvboxRed
+  Conditional:
+    link: GruvboxRed
+  Repeat:
+    link: GruvboxRed
+  Label:
+    link: GruvboxRed
+  Exception:
+    link: GruvboxRed
+  Operator:
+    link: GruvboxFg1
+  Keyword:
+    link: GruvboxRed
+  Identifier:
+    link: GruvboxBlue
+  Function:
+    link: GruvboxGreenBold
+  PreProc:
+    link: GruvboxAqua
+  Include:
+    link: GruvboxAqua
+  Define:
+    link: GruvboxAqua
+  Macro:
+    link: GruvboxAqua
+  PreCondit:
+    link: GruvboxAqua
+  Constant:
+    link: GruvboxPurple
+  Character:
+    link: GruvboxPurple
+  String:
+    link: GruvboxGreen
+  Boolean:
+    link: GruvboxPurple
+  Number:
+    link: GruvboxPurple
+  Float:
+    link: GruvboxPurple
+  Type:
+    link: GruvboxYellow
+  StorageClass:
+    link: GruvboxOrange
+  Structure:
+    link: GruvboxAqua
+  Typedef:
+    link: GruvboxYellow
+  # }}}
+
+  # Completion menu {{{
+  Pmenu:
+    fg: fg1
+    bg: bg2
+  PmenuSel:
+    fg: bg2
+    bg: blue
+    gui: bold
+  PmenuSbar:
+    bg: bg2
+  PmenuThumb:
+    bg: bg4
+  # }}}
+
+  # Diffs {{{
+  DiffDelete:
+    fg: red
+    bg: bg0
+    gui: inverse
+  DiffAdd:
+    fg: green
+    bg: bg0
+    gui: inverse
+  DiffChange:
+    fg: aqua
+    bg: bg0
+    gui: inverse
+  DiffText:
+    fg: yellow
+    bg: bg0
+    gui: inverse
+  # }}}
+
+  # Spelling {{{
+  SpellCap:
+    gui: undercurl
+    guisp: blue
+  SpellBad:
+    gui: undercurl
+    guisp: red
+  SpellLocal:
+    gui: undercurl
+    guisp: aqua
+  SpellRare:
+    gui: undercurl
+    guisp: purple
+  # }}}
+  # }}}
+
+  # Plugins {{{
+  # Sneak {{{
+  Sneak:
+    link: Search
+  SneakLabel:
+    link: Search
+  # }}}
+
+  # Signify {{{
+  SignifySignAdd:
+    link: GruvboxGreenSign
+  SignifySignChange:
+    link: SignColumn
+  SignifySignDelete:
+    link: GruvboxRedSign
+  # }}}
+
+  # FZF {{{
+  # See also `fzf_colors` section below
+  Fzf1:
+    fg: blue
+    bg: bg1
+  Fzf2:
+    fg: orange
+    bg: bg1
+  Fzf3:
+    fg: fg4
+    bg: bg1
+  # }}}
+
+  # ALE {{{
+  ALEError:
+    gui: undercurl
+    guisp: red
+  ALEWarning:
+    gui: undercurl
+    guisp: yellow
+  ALEInfo:
+    gui: undercurl
+    guisp: blue
+  ALEErrorSign:
+    link: GruvboxRedSign
+  ALEWarningSign:
+    link: GruvboxYellowSign
+  ALEInfoSign:
+    link: GruvboxBlueSign
+  ALEVirtualTextError:
+    link: GruvboxRed
+  ALEVirtualTextWarning:
+    link: GruvboxYellow
+  ALEVirtualTextInfo:
+    link: GruvboxBlue
+  # }}}
+
+  # highlight_yank {{{
+  TextYank:
+    link: PmenuSel
+  # }}}
+  # }}}
+
+  # `diff` filetype {{{
+  # Kept here instead of `ftplugins` because the highlight groups are needed by
+  # several other filetypes (for example `gitcommit`)
+  diffAdded:
+    link: GruvboxGreen
+  diffRemoved:
+    link: GruvboxRed
+  diffChanged:
+    link: GruvboxAqua
+  diffFile:
+    link: GruvboxOrange
+  diffNewFile:
+    link: GruvboxYellow
+  diffLine:
+    link: GruvboxBlue
+    # }}}
+
+# }}}
+
+ftplugins:  # {{{
+
+  c:  # {{{
+    cOperator:
+      link: GruvboxPurple
+    cppOperator:
+      link: GruvboxPurple
+    cStructure:
+      link: GruvboxOrange
+  # }}}
+
+  css:  # {{{
+    cssBraces:
+      link: GruvboxBlue
+    cssFunctionName:
+      link: GruvboxYellow
+    cssIdentifier:
+      link: GruvboxOrange
+    cssClassName:
+      link: GruvboxGreen
+    cssColor:
+      link: GruvboxBlue
+    cssSelectorOp:
+      link: GruvboxBlue
+    cssSelectorOp2:
+      link: GruvboxBlue
+    cssImportant:
+      link: GruvboxGreen
+    cssVendor:
+      link: GruvboxFg1
+    cssTextProp:
+      link: GruvboxAqua
+    cssAnimationProp:
+      link: GruvboxAqua
+    cssUIProp:
+      link: GruvboxYellow
+    cssTransformProp:
+      link: GruvboxAqua
+    cssTransitionProp:
+      link: GruvboxAqua
+    cssPrintProp:
+      link: GruvboxAqua
+    cssPositioningProp:
+      link: GruvboxYellow
+    cssBoxProp:
+      link: GruvboxAqua
+    cssFontDescriptorProp:
+      link: GruvboxAqua
+    cssFlexibleBoxProp:
+      link: GruvboxAqua
+    cssBorderOutlineProp:
+      link: GruvboxAqua
+    cssBackgroundProp:
+      link: GruvboxAqua
+    cssMarginProp:
+      link: GruvboxAqua
+    cssListProp:
+      link: GruvboxAqua
+    cssTableProp:
+      link: GruvboxAqua
+    cssFontProp:
+      link: GruvboxAqua
+    cssPaddingProp:
+      link: GruvboxAqua
+    cssDimensionProp:
+      link: GruvboxAqua
+    cssRenderProp:
+      link: GruvboxAqua
+    cssColorProp:
+      link: GruvboxAqua
+    cssGeneratedContentProp:
+      link: GruvboxAqua
+  # }}}
+
+  gitcommit:  # {{{
+    gitCommitSummary:
+      link: GruvboxBlue
+    gitCommitOverflow:
+      link: Error
+  # }}}
+
+  haskell:  # {{{
+    haskellType:
+      link: GruvboxBlue
+    haskellIdentifier:
+      link: GruvboxAqua
+    haskellSeparator:
+      link: GruvboxFg4
+    haskellDelimiter:
+      link: GruvboxOrange
+    haskellOperators:
+      link: GruvboxPurple
+    haskellBacktick:
+      link: GruvboxOrange
+    haskellStatement:
+      link: GruvboxPurple
+    haskellConditional:
+      link: GruvboxPurple
+    haskellLet:
+      link: GruvboxRed
+    haskellDefault:
+      link: GruvboxRed
+    haskellWhere:
+      link: GruvboxRed
+    haskellBottom:
+      link: GruvboxRedBold
+    haskellImportKeywords:
+      link: GruvboxPurpleBold
+    haskellDeclKeyword:
+      link: GruvboxOrange
+    haskellDecl:
+      link: GruvboxOrange
+    haskellDeriving:
+      link: GruvboxPurple
+    haskellAssocType:
+      link: GruvboxAqua
+    haskellNumber:
+      link: GruvboxAqua
+    haskellPragma:
+      link: GruvboxRedBold
+    haskellTH:
+      link: GruvboxAquaBold
+    haskellForeignKeywords:
+      link: GruvboxGreen
+    haskellKeyword:
+      link: GruvboxRed
+    haskellFloat:
+      link: GruvboxAqua
+    haskellInfix:
+      link: GruvboxPurple
+    haskellQuote:
+      link: GruvboxGreenBold
+    haskellShebang:
+      link: GruvboxYellowBold
+    haskellLiquid:
+      link: GruvboxPurpleBold
+    haskellQuasiQuoted:
+      link: GruvboxBlueBold
+    haskellRecursiveDo:
+      link: GruvboxPurlpe
+    haskellQuotedType:
+      link: GruvboxRed
+    haskellPreProc:
+      link: GruvboxFg4
+    haskellTypeRoles:
+      link: GruvboxRedBold
+    haskellTypeForall:
+      link: GruvboxRed
+    haskellPatternKeyword:
+      link: GruvboxBlue
+  # }}}
+
+  html:  # {{{
+    htmlTag:
+      link: GruvboxAquaBold
+    htmlEndTag:
+      link: GruvboxAquaBold
+    htmlTagName:
+      link: GruvboxBlue
+    htmlArg:
+      link: GruvboxOrange
+    htmlScriptTag:
+      link: GruvboxPurple
+    htmlTagN:
+      link: GruvboxFg1
+    htmlSpecialTagName:
+      link: GruvboxBlue
+    htmlLink:
+      fg: fg4
+      gui: underline
+    htmlSpecialChar:
+      link: GruvboxRed
+    htmlBold:
+      fg: fg
+      bg: bg
+      gui: bold
+    htmlBoldUnderline:
+      fg: fg
+      bg: bg
+      gui: bold,underline
+    htmlBoldItalic:
+      fg: fg
+      bg: bg
+      gui: bold,italic
+    htmlBoldUnderlineItalic:
+      fg: fg
+      bg: bg
+      gui: bold,underline,italic
+    htmlUnderline:
+      fg: fg
+      bg: bg
+      gui: underline
+    htmlUnderlineItalic:
+      fg: fg
+      bg: bg
+      gui: underline,italic
+    htmlItalic:
+      fg: fg
+      bg: bg
+      gui: italic
+      # }}}
+
+  javascript:  # {{{
+    javaScriptBraces:
+      link: GruvboxFg1
+    javaScriptFunction:
+      link: GruvboxAqua
+    javaScriptIdentifier:
+      link: GruvboxRed
+    javaScriptMember:
+      link: GruvboxBlue
+    javaScriptNumber:
+      link: GruvboxPurple
+    javaScriptNull:
+      link: GruvboxPurple
+    javaScriptParens:
+      link: GruvboxFg3
+    jsClassKeyword:
+      link: GruvboxAqua
+    jsExtendsKeyword:
+      link: GruvboxAqua
+    jsExportDefault:
+      link: GruvboxAqua
+    jsTemplateBraces:
+      link: GruvboxAqua
+    jsGlobalNodeObjects:
+      link: GruvboxBlue
+    jsGlobalObjects:
+      link: GruvboxBlue
+    jsObjectKey:
+      link: GruvboxGreenBold
+    jsFunction:
+      link: GruvboxAqua
+    jsFuncCall:
+      link: GruvboxBlue
+    jsFuncParens:
+      link: GruvboxFg3
+    jsParens:
+      link: GruvboxFg3
+    jsNull:
+      link: GruvboxPurple
+    jsUndefined:
+      link: GruvboxPurple
+    jsClassDefinition:
+      link: GruvboxYellow
+    jsOperatorKeyword:
+      link: GruvboxRed
+    jsxTagName:
+      link: GruvboxAqua
+    jsxComponentName:
+      link: GruvboxGreen
+    jsxCloseString:
+      link: GruvboxFg4
+    jsxAttrib:
+      link: GruvboxYellow
+    jsxEqual:
+      link: GruvboxAqua
+  # }}}
+
+  json:  # {{{
+    jsonKeyword:
+      link: GruvboxGreen
+    jsonQuote:
+      link: GruvboxGreen
+    jsonBraces:
+      link: GruvboxFg1
+    jsonString:
+      link: GruvboxFg1
+  # }}}
+
+  mail:  # {{{
+    mailHeader:
+      link: GruvBoxBlue
+    mailHeaderKey:
+      link: GruvBoxBlue
+    mailHeaderEmail:
+      link: GruvBoxBlue
+    mailSubject:
+      link: GruvboxBlue
+    mailQuoted1:
+      link: GruvBoxAqua
+    mailQuoted2:
+      link: GruvBoxPurple
+    mailQuoted3:
+      link: GruvBoxYellow
+    mailQuoted4:
+      link: GruvBoxGreen
+    mailQuoted5:
+      link: GruvBoxRed
+    mailQuoted6:
+      link: GruvBoxOrange
+    mailQuotedExp1:
+      link: GruvBoxAqua
+    mailQuotedExp2:
+      link: GruvBoxPurple
+    mailQuotedExp3:
+      link: GruvBoxYellow
+    mailQuotedExp4:
+      link: GruvBoxGreen
+    mailQuotedExp5:
+      link: GruvBoxRed
+    mailQuotedExp6:
+      link: GruvBoxOrange
+    mailVerbatim:
+      link: GruvBoxRed
+    mailSignature:
+      link: GruvBoxFg
+    mailURL:
+      link: GruvBoxOrange
+    mailEmail:
+      link: GruvBoxOrange
+  # }}}
+
+  markdown:  # {{{
+    markdownItalic:
+      fg: fg3
+      gui: italic
+    markdownH1:
+      link: GruvboxGreenBold
+    markdownH2:
+      link: GruvboxGreenBold
+    markdownH3:
+      link: GruvboxYellowBold
+    markdownH4:
+      link: GruvboxYellowBold
+    markdownH5:
+      link: GruvboxYellow
+    markdownH6:
+      link: GruvboxYellow
+    markdownCode:
+      link: GruvboxAqua
+    markdownCodeBlock:
+      link: GruvboxAqua
+    markdownCodeDelimiter:
+      link: GruvboxAqua
+    markdownBlockquote:
+      link: GruvboxGray
+    markdownListMarker:
+      link: GruvboxGray
+    markdownOrderedListMarker:
+      link: GruvboxGray
+    markdownRule:
+      link: GruvboxGray
+    markdownHeadingRule:
+      link: GruvboxGray
+    markdownUrlDelimiter:
+      link: GruvboxFg3
+    markdownLinkDelimiter:
+      link: GruvboxFg3
+    markdownLinkTextDelimiter:
+      link: GruvboxFg3
+    markdownHeadingDelimiter:
+      link: GruvboxOrange
+    markdownUrl:
+      link: GruvboxPurple
+    markdownUrlTitleDelimiter:
+      link: GruvboxGreen
+    markdownLinkText:
+      fg: gray
+      gui: underline
+    markdownIdDeclaration:
+      link: markdownLinkText
+  # }}}
+
+  netrw:  # {{{
+    netrwDir:
+      link: GruvboxAqua
+    netrwClassify:
+      link: GruvboxAqua
+    netrwLink:
+      link: GruvboxGray
+    netrwSymLink:
+      link: GruvboxFg1
+    netrwExe:
+      link: GruvboxYellow
+    netrwComment:
+      link: GruvboxGray
+    netrwList:
+      link: GruvboxBlue
+    netrwHelpCmd:
+      link: GruvboxAqua
+    netrwCmdSep:
+      link: GruvboxFg3
+    netrwVersion:
+      link: GruvboxGreen
+  # }}}
+
+  python:  # {{{
+    pythonBuiltin:
+      link: GruvboxOrange
+    pythonBuiltinObj:
+      link: GruvboxOrange
+    pythonBuiltinFunc:
+      link: GruvboxOrange
+    pythonFunction:
+      link: GruvboxAqua
+    pythonDecorator:
+      link: GruvboxRed
+    pythonInclude:
+      link: GruvboxBlue
+    pythonImport:
+      link: GruvboxBlue
+    pythonRun:
+      link: GruvboxBlue
+    pythonCoding:
+      link: GruvboxBlue
+    pythonOperator:
+      link: GruvboxRed
+    pythonException:
+      link: GruvboxRed
+    pythonExceptions:
+      link: GruvboxPurple
+    pythonBoolean:
+      link: GruvboxPurple
+    pythonDot:
+      link: GruvboxFg3
+    pythonConditional:
+      link: GruvboxRed
+    pythonRepeat:
+      link: GruvboxRed
+    pythonDottedName:
+      link: GruvboxAquaBold
+  # }}}
+
+  ruby:  # {{{
+    rubyStringDelimiter:
+      link: GruvboxGreen
+    rubyInterpolationDelimiter:
+      link: GruvboxAqua
+  # }}}
+
+  rust:  # {{{
+    rustSigil:
+      link: GruvboxOrange
+    rustEscape:
+      link: GruvboxAqua
+    rustStringContinuation:
+      link: GruvboxAqua
+    rustEnum:
+      link: GruvboxAqua
+    rustStructure:
+      link: GruvboxAqua
+    rustModPathSep:
+      link: GruvboxFg2
+    rustCommentLineDoc:
+      link: Comment
+    rustDefault:
+      link: GruvboxAqua
+  # }}}
+
+  vim:  # {{{
+    vimCommentTitle:
+      fg: fg4
+      gui: bold
+    vimNotation:
+      link: GruvboxOrange
+    vimBracket:
+      link: GruvboxOrange
+    vimMapModKey:
+      link: GruvboxOrange
+    vimFuncSID:
+      link: GruvboxFg3
+    vimSetSep:
+      link: GruvboxFg3
+    vimSep:
+      link: GruvboxFg3
+    vimContinue:
+      link: GruvboxFg3
+  # }}}
+
+  xml:  # {{{
+    xmlTag:
+      link: GruvboxAquaBold
+    xmlEndTag:
+      link: GruvboxAquaBold
+    xmlTagName:
+      link: GruvboxAquaBold
+    xmlEqual:
+      link: GruvboxBlue
+    docbkKeyword:
+      link: GruvboxAquaBold
+    xmlDocTypeDecl:
+      link: GruvboxGray
+    xmlDocTypeKeyword:
+      link: GruvboxPurple
+    xmlCdataStart:
+      link: GruvboxGray
+    xmlCdataCdata:
+      link: GruvboxPurple
+    dtdFunction:
+      link: GruvboxGray
+    dtdTagName:
+      link: GruvboxPurple
+    xmlAttrib:
+      link: GruvboxOrange
+    xmlProcessingDelim:
+      link: GruvboxGray
+    dtdParamEntityPunct:
+      link: GruvboxGray
+    dtdParamEntityDPunct:
+      link: GruvboxGray
+    xmlAttribPunct:
+      link: GruvboxGray
+    xmlEntity:
+      link: GruvboxRed
+    xmlEntityPunct:
+      link: GruvboxRed
+      # }}}
+
+# }}}
+
+fzf_colors:  # {{{
+  fg: GruvboxFg1
+  bg: GruvboxBg0
+  hl: GruvboxYellow
+  fg+: GruvboxFg1
+  bg+: GruvboxBg1
+  hl+: GruvboxYellow
+  info: GruvboxBlue
+  prompt: GruvboxFg4
+  pointer: GruvboxBlue
+  marker: GruvboxOrange
+  spinner: GruvboxYellow
+  header: GruvboxBg3
+# }}}
+
+lightline:  # {{{
+  normal:
+    left:
+      - [bg0, fg4, bold]
+      - [fg4, bg2]
+    right:
+      - [bg0, fg4]
+      - [fg4, bg2]
+    middle:
+      - [fg4, bg1]
+    error:
+      - [bg0, orange]
+    warning:
+      - [bg2, yellow]
+  inactive:
+    right:
+      - [bg4, bg1]
+      - [bg4, bg1]
+    left:
+      - [bg4, bg1]
+      - [bg4, bg1]
+    middle:
+      - [bg4, bg1]
+  insert:
+    left:
+      - [bg0, blue, bold]
+      - [fg1, bg2]
+    right:
+      - [bg0, blue]
+      - [fg1, bg2]
+    middle:
+      - [fg4, bg1]
+  terminal:
+    left:
+      - [bg0, green, bold]
+      - [fg1, bg2]
+    right:
+      - [bg0, green]
+      - [fg1, bg2]
+    middle:
+      - [fg4, bg1]
+  replace:
+    left:
+      - [bg0, aqua, bold]
+      - [fg1, bg2]
+    right:
+      - [bg0, aqua]
+      - [fg1, bg2]
+    middle:
+      - [fg4, bg1]
+  visual:
+    left:
+      - [bg0, orange, bold]
+      - [bg0, bg4]
+    right:
+      - [bg0, orange]
+      - [bg0, bg4]
+    middle:
+      - [fg4, bg1]
+  tabline:
+    left:
+      - [fg4, bg2]
+    tabsel:
+      - [bg0, fg4]
+    middle:
+      - [bg0, bg4]
+    right:
+      - [bg0, orange]
+
+# }}}
