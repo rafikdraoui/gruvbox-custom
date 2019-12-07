@@ -1,6 +1,6 @@
 # vim: foldmethod=marker foldlevel=0
 ---
-colors:  # {{{
+colors: # {{{1
   palette:
     dark0_hard: "#1d2021"
     dark0: "#282828"
@@ -77,11 +77,9 @@ colors:  # {{{
     color_13: bright_purple
     color_14: bright_aqua
     color_15: light1
-# }}}
 
-highlights:  # {{{
-
-  # Gruvbox highlights {{{
+highlights: # {{{1
+  # Gruvbox highlights {{{2
   GruvboxFg0:
     fg: fg0
   GruvboxFg1:
@@ -157,10 +155,9 @@ highlights:  # {{{
   GruvboxAquaSign:
     fg: aqua
     bg: bg1
-  # }}}
 
-  # Colorscheme {{{
-  # General UI {{{
+  # Colorscheme {{{2
+  # General UI {{{3
   Normal:
     fg: fg1
     bg: bg0
@@ -242,9 +239,8 @@ highlights:  # {{{
     link: GruvboxOrangeBold
   WarningMsg:
     link: GruvboxRedBold
-  # }}}
 
-  # Gutter {{{
+  # Gutter {{{3
   LineNr:
     fg: bg4
   SignColumn:
@@ -257,9 +253,8 @@ highlights:  # {{{
   FoldColumn:
     fg: gray
     bg: bg1
-  # }}}
 
-  # Cursor {{{
+  # Cursor {{{3
   Cursor:
     fg: NONE
     bg: NONE
@@ -270,9 +265,8 @@ highlights:  # {{{
     link: Cursor
   lCursor:
     link: Cursor
-  # }}}
 
-  # Syntax highlighting {{{
+  # Syntax highlighting {{{3
   Special:
     link: GruvboxOrange
   Comment:
@@ -334,9 +328,8 @@ highlights:  # {{{
     link: GruvboxAqua
   Typedef:
     link: GruvboxYellow
-  # }}}
 
-  # Completion menu {{{
+  # Completion menu {{{3
   Pmenu:
     fg: fg1
     bg: bg2
@@ -348,9 +341,8 @@ highlights:  # {{{
     bg: bg2
   PmenuThumb:
     bg: bg4
-  # }}}
 
-  # Diffs {{{
+  # Diffs {{{3
   DiffDelete:
     fg: red
     bg: bg0
@@ -367,9 +359,8 @@ highlights:  # {{{
     fg: yellow
     bg: bg0
     gui: inverse
-  # }}}
 
-  # Spelling {{{
+  # Spelling {{{3
   SpellCap:
     gui: undercurl
     guisp: blue
@@ -382,27 +373,23 @@ highlights:  # {{{
   SpellRare:
     gui: undercurl
     guisp: purple
-  # }}}
-  # }}}
 
-  # Plugins {{{
-  # Sneak {{{
+  # Plugins {{{2
+  # Sneak {{{3
   Sneak:
     link: Search
   SneakLabel:
     link: Search
-  # }}}
 
-  # Signify {{{
+  # Signify {{{3
   SignifySignAdd:
     link: GruvboxGreenSign
   SignifySignChange:
     link: SignColumn
   SignifySignDelete:
     link: GruvboxRedSign
-  # }}}
 
-  # FZF {{{
+  # FZF {{{3
   # See also `fzf_colors` section below
   Fzf1:
     fg: blue
@@ -413,9 +400,8 @@ highlights:  # {{{
   Fzf3:
     fg: fg4
     bg: bg1
-  # }}}
 
-  # ALE {{{
+  # ALE {{{3
   ALEError:
     gui: undercurl
     guisp: red
@@ -437,15 +423,12 @@ highlights:  # {{{
     link: GruvboxYellow
   ALEVirtualTextInfo:
     link: GruvboxBlue
-  # }}}
 
-  # highlight_yank {{{
+  # highlight_yank {{{3
   TextYank:
     link: PmenuSel
-  # }}}
-  # }}}
 
-  # `diff` filetype {{{
+  # `diff` filetype {{{2
   # Kept here instead of `ftplugins` because the highlight groups are needed by
   # several other filetypes (for example `gitcommit`)
   diffAdded:
@@ -460,22 +443,17 @@ highlights:  # {{{
     link: GruvboxYellow
   diffLine:
     link: GruvboxBlue
-    # }}}
 
-# }}}
-
-ftplugins:  # {{{
-
-  c:  # {{{
+ftplugins: # {{{1
+  c: # {{{2
     cOperator:
       link: GruvboxPurple
     cppOperator:
       link: GruvboxPurple
     cStructure:
       link: GruvboxOrange
-  # }}}
 
-  css:  # {{{
+  css: # {{{2
     cssBraces:
       link: GruvboxBlue
     cssFunctionName:
@@ -536,16 +514,14 @@ ftplugins:  # {{{
       link: GruvboxAqua
     cssGeneratedContentProp:
       link: GruvboxAqua
-  # }}}
 
-  gitcommit:  # {{{
+  gitcommit: # {{{2
     gitCommitSummary:
       link: GruvboxBlue
     gitCommitOverflow:
       link: Error
-  # }}}
 
-  haskell:  # {{{
+  haskell: # {{{2
     haskellType:
       link: GruvboxBlue
     haskellIdentifier:
@@ -614,9 +590,8 @@ ftplugins:  # {{{
       link: GruvboxRed
     haskellPatternKeyword:
       link: GruvboxBlue
-  # }}}
 
-  html:  # {{{
+  html: # {{{2
     htmlTag:
       link: GruvboxAquaBold
     htmlEndTag:
@@ -664,9 +639,8 @@ ftplugins:  # {{{
       fg: fg
       bg: bg
       gui: italic
-      # }}}
 
-  javascript:  # {{{
+  javascript: # {{{2
     javaScriptBraces:
       link: GruvboxFg1
     javaScriptFunction:
@@ -721,9 +695,8 @@ ftplugins:  # {{{
       link: GruvboxYellow
     jsxEqual:
       link: GruvboxAqua
-  # }}}
 
-  json:  # {{{
+  json: # {{{2
     jsonKeyword:
       link: GruvboxGreen
     jsonQuote:
@@ -732,9 +705,8 @@ ftplugins:  # {{{
       link: GruvboxFg1
     jsonString:
       link: GruvboxFg1
-  # }}}
 
-  mail:  # {{{
+  mail: # {{{2
     mailHeader:
       link: GruvBoxBlue
     mailHeaderKey:
@@ -775,9 +747,8 @@ ftplugins:  # {{{
       link: GruvBoxOrange
     mailEmail:
       link: GruvBoxOrange
-  # }}}
 
-  markdown:  # {{{
+  markdown: # {{{2
     markdownItalic:
       fg: fg3
       gui: italic
@@ -826,9 +797,8 @@ ftplugins:  # {{{
       gui: underline
     markdownIdDeclaration:
       link: markdownLinkText
-  # }}}
 
-  netrw:  # {{{
+  netrw: # {{{2
     netrwDir:
       link: GruvboxAqua
     netrwClassify:
@@ -849,9 +819,8 @@ ftplugins:  # {{{
       link: GruvboxFg3
     netrwVersion:
       link: GruvboxGreen
-  # }}}
 
-  python:  # {{{
+  python: # {{{2
     pythonBuiltin:
       link: GruvboxOrange
     pythonBuiltinObj:
@@ -886,16 +855,14 @@ ftplugins:  # {{{
       link: GruvboxRed
     pythonDottedName:
       link: GruvboxAquaBold
-  # }}}
 
-  ruby:  # {{{
+  ruby: # {{{2
     rubyStringDelimiter:
       link: GruvboxGreen
     rubyInterpolationDelimiter:
       link: GruvboxAqua
-  # }}}
 
-  rust:  # {{{
+  rust: # {{{2
     rustSigil:
       link: GruvboxOrange
     rustEscape:
@@ -912,9 +879,8 @@ ftplugins:  # {{{
       link: Comment
     rustDefault:
       link: GruvboxAqua
-  # }}}
 
-  vim:  # {{{
+  vim: # {{{2
     vimCommentTitle:
       fg: fg4
       gui: bold
@@ -932,9 +898,8 @@ ftplugins:  # {{{
       link: GruvboxFg3
     vimContinue:
       link: GruvboxFg3
-  # }}}
 
-  xml:  # {{{
+  xml: # {{{2
     xmlTag:
       link: GruvboxAquaBold
     xmlEndTag:
@@ -971,11 +936,8 @@ ftplugins:  # {{{
       link: GruvboxRed
     xmlEntityPunct:
       link: GruvboxRed
-      # }}}
 
-# }}}
-
-fzf_colors:  # {{{
+fzf_colors: # {{{1
   fg: GruvboxFg1
   bg: GruvboxBg0
   hl: GruvboxYellow
@@ -988,9 +950,8 @@ fzf_colors:  # {{{
   marker: GruvboxOrange
   spinner: GruvboxYellow
   header: GruvboxBg3
-# }}}
 
-lightline:  # {{{
+lightline: # {{{1
   normal:
     left:
       - [bg0, fg4, bold]
@@ -1058,5 +1019,3 @@ lightline:  # {{{
       - [bg0, bg4]
     right:
       - [bg0, orange]
-
-# }}}
