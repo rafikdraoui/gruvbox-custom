@@ -52,7 +52,7 @@ hi StatusLine guifg=#504945 guibg=#ebdbb2 gui=inverse
 hi StatusLineNC guifg=#3c3836 guibg=#a89984 gui=inverse
 hi VertSplit guifg=#665c54 guibg=#1d2021
 hi WildMenu guifg=#83a598 guibg=#504945 gui=bold
-hi! link Directory GruvboxGreenBold
+hi! link Directory GruvboxBlue
 hi! link Title GruvboxGreenBold
 hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
 hi! link MoreMsg GruvboxYellowBold

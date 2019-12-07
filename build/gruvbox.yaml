@@ -224,7 +224,7 @@ highlights: # {{{1
     bg: bg2
     gui: bold
   Directory:
-    link: GruvboxGreenBold
+    link: GruvboxBlue
   Title:
     link: GruvboxGreenBold
   ErrorMsg:
@@ -799,10 +799,8 @@ ftplugins: # {{{1
       link: markdownLinkText
 
   netrw: # {{{2
-    netrwDir:
-      link: GruvboxAqua
     netrwClassify:
-      link: GruvboxAqua
+      link: netrwDir
     netrwLink:
       link: GruvboxGray
     netrwSymLink:
