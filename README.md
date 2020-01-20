@@ -9,16 +9,12 @@ this version takes 0.825ms (slightly faster than vim-fugitive).
 
 The main gain is achieved by having the vim colorscheme script be a list of
 "raw" `:highlight` commands instead of making function calls that dynamically
-build strings of highlight commands and `:execute` them.
-
-Further gains are made by moving filetype-specific highlights to `ftplugin`s,
-and by using the "raw" version of the `lightline` palette instead of
-dynamically building it with calls to `synIDattr()` and `hlID()`.
+build strings of highlight commands and `:execute` them. Further gains are made
+by moving filetype-specific highlights to `ftplugin`s.
 
 This is done by configuring the colors and highlights in a YAML template, and
-using it to compile optimized versions of `colors/gruvbox-custom.vim`,
-`after/ftplugin/*.vim`, and
-`autoload/lightline/colorscheme/gruvbox_custom.vim`.
+using it to compile optimized versions of `colors/gruvbox-custom.vim` and
+`after/ftplugin/*.vim`.
 
 ## Caveats
 

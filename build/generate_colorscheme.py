@@ -6,7 +6,6 @@ COLORSCHEME_NAME = "gruvbox-custom"
 SOURCE_FILE = "./build/gruvbox.yaml"
 OUTPUT_FILE = f"./colors/{COLORSCHEME_NAME}.vim"
 FTPLUGIN_DIR = "./after/ftplugin"
-LIGHTLINE_PALETTE_FILE = "./_gruvbox_lightline_palette.vim"
 
 
 Highlight = namedtuple(
@@ -78,18 +77,6 @@ def get_ftplugins_highlights(color_table, ftplugins):
     return result
 
 
-def make_lightline_palette(color_table, lightline):
-    p = {}
-    for mode, config in lightline.items():
-        p[mode] = {}
-        for where, component_highlights in config.items():
-            p[mode][where] = [
-                [color_table.get(attr, attr) for attr in hl]
-                for hl in component_highlights
-            ]
-    return p
-
-
 def write_colorscheme(highlight_cmds, terminal_colors_variables, fzf_colors):
     with open(OUTPUT_FILE, "w") as f:
         f.write(f"let g:colors_name='{COLORSCHEME_NAME}'\n")
@@ -103,11 +90,6 @@ def write_ftplugins(ftplugins_highlights):
         with open(f"{FTPLUGIN_DIR}/{ft_name}.vim", "w") as f:
             for line in highlight_cmds:
                 f.write(f"{line}\n")
-
-
-def write_lightline_colorscheme(lightline_palette):
-    with open(LIGHTLINE_PALETTE_FILE, "w") as f:
-        f.write(f"let palette = lightline#colorscheme#fill({lightline_palette})\n")
 
 
 def main():
@@ -124,9 +106,6 @@ def main():
 
     ftplugins_highlights = get_ftplugins_highlights(color_table, sections["ftplugins"])
     write_ftplugins(ftplugins_highlights)
-
-    lightline_palette = make_lightline_palette(color_table, sections["lightline"])
-    write_lightline_colorscheme(lightline_palette)
 
 
 if __name__ == "__main__":
