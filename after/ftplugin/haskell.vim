@@ -22,7 +22,6 @@ hi! link haskellForeignKeywords GruvboxGreen
 hi! link haskellKeyword GruvboxRed
 hi! link haskellFloat GruvboxAqua
 hi! link haskellInfix GruvboxPurple
-hi! link haskellQuote GruvboxGreenBold
 hi! link haskellShebang GruvboxYellowBold
 hi! link haskellLiquid GruvboxPurpleBold
 hi! link haskellQuasiQuoted GruvboxBlueBold

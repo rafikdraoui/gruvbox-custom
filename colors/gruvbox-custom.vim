@@ -53,7 +53,7 @@ hi StatusLineNC guifg=#3c3836 guibg=#a89984 gui=inverse
 hi VertSplit guifg=#665c54 guibg=#1d2021
 hi WildMenu guifg=#83a598 guibg=#504945 gui=bold
 hi! link Directory GruvboxBlue
-hi! link Title GruvboxGreenBold
+hi! link Title GruvboxOrangeBold
 hi ErrorMsg guifg=#1d2021 guibg=#fb4934 gui=bold
 hi! link MoreMsg GruvboxYellowBold
 hi! link ModeMsg GruvboxYellowBold
@@ -79,7 +79,7 @@ hi! link Exception GruvboxRed
 hi! link Operator GruvboxFg1
 hi! link Keyword GruvboxRed
 hi! link Identifier GruvboxBlue
-hi! link Function GruvboxGreenBold
+hi! link Function Identifier
 hi! link PreProc GruvboxAqua
 hi! link Include GruvboxAqua
 hi! link Define GruvboxAqua

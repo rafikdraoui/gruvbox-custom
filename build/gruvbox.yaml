@@ -226,7 +226,7 @@ highlights: # {{{1
   Directory:
     link: GruvboxBlue
   Title:
-    link: GruvboxGreenBold
+    link: GruvboxOrangeBold
   ErrorMsg:
     fg: bg0
     bg: red
@@ -239,8 +239,6 @@ highlights: # {{{1
     link: GruvboxOrangeBold
   WarningMsg:
     link: GruvboxRedBold
-
-  # Gutter {{{3
   LineNr:
     fg: bg4
   SignColumn:
@@ -297,7 +295,7 @@ highlights: # {{{1
   Identifier:
     link: GruvboxBlue
   Function:
-    link: GruvboxGreenBold
+    link: Identifier
   PreProc:
     link: GruvboxAqua
   Include:
@@ -570,8 +568,6 @@ ftplugins: # {{{1
       link: GruvboxAqua
     haskellInfix:
       link: GruvboxPurple
-    haskellQuote:
-      link: GruvboxGreenBold
     haskellShebang:
       link: GruvboxYellowBold
     haskellLiquid:
@@ -667,8 +663,6 @@ ftplugins: # {{{1
       link: GruvboxBlue
     jsGlobalObjects:
       link: GruvboxBlue
-    jsObjectKey:
-      link: GruvboxGreenBold
     jsFunction:
       link: GruvboxAqua
     jsFuncCall:
@@ -752,10 +746,6 @@ ftplugins: # {{{1
     markdownItalic:
       fg: fg3
       gui: italic
-    markdownH1:
-      link: GruvboxGreenBold
-    markdownH2:
-      link: GruvboxGreenBold
     markdownH3:
       link: GruvboxYellowBold
     markdownH4:
@@ -826,13 +816,13 @@ ftplugins: # {{{1
     pythonBuiltinFunc:
       link: GruvboxOrange
     pythonFunction:
-      link: GruvboxAqua
-    pythonDecorator:
-      link: GruvboxRed
+      link: GruvboxBlueBold
+    pythonClassVar:
+      link: GruvboxPurple
     pythonInclude:
       link: GruvboxBlue
     pythonImport:
-      link: GruvboxBlue
+      link: pythonInclude
     pythonRun:
       link: GruvboxBlue
     pythonCoding:
@@ -852,7 +842,7 @@ ftplugins: # {{{1
     pythonRepeat:
       link: GruvboxRed
     pythonDottedName:
-      link: GruvboxAquaBold
+      link: pythonDecorator
 
   ruby: # {{{2
     rubyStringDelimiter:
@@ -873,8 +863,6 @@ ftplugins: # {{{1
       link: GruvboxAqua
     rustModPathSep:
       link: GruvboxFg2
-    rustCommentLineDoc:
-      link: Comment
     rustDefault:
       link: GruvboxAqua
 

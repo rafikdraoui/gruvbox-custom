@@ -1,6 +1,4 @@
 hi markdownItalic guifg=#bdae93 gui=italic
-hi! link markdownH1 GruvboxGreenBold
-hi! link markdownH2 GruvboxGreenBold
 hi! link markdownH3 GruvboxYellowBold
 hi! link markdownH4 GruvboxYellowBold
 hi! link markdownH5 GruvboxYellow
