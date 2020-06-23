@@ -59,13 +59,6 @@ def make_terminal_colors_variable(colors):
     ]
 
 
-def make_fzf_colors(fzf_colors):
-    result = ["let g:fzf_colors = {"]
-    result += [rf"\ '{name}': ['fg', '{hl}']," for name, hl in fzf_colors.items()]
-    result += [r"\ }"]
-    return "\n".join(result)
-
-
 def get_ftplugins_highlights(color_table, ftplugins):
     result = {}
     for ft_name, ft_highlights in ftplugins.items():
@@ -77,12 +70,11 @@ def get_ftplugins_highlights(color_table, ftplugins):
     return result
 
 
-def write_colorscheme(highlight_cmds, terminal_colors_variables, fzf_colors):
+def write_colorscheme(highlight_cmds, terminal_colors_variables):
     with open(OUTPUT_FILE, "w") as f:
         f.write(f"let g:colors_name='{COLORSCHEME_NAME}'\n")
         for line in highlight_cmds + terminal_colors_variables:
             f.write(f"{line}\n")
-        f.write(f"{fzf_colors}\n")
 
 
 def write_ftplugins(ftplugins_highlights):
@@ -101,8 +93,7 @@ def main():
         for name, attrs in sections["highlights"].items()
     ]
     terminal_colors_variables = make_terminal_colors_variable(sections["colors"])
-    fzf_colors = make_fzf_colors(sections["fzf_colors"])
-    write_colorscheme(highlight_cmds, terminal_colors_variables, fzf_colors)
+    write_colorscheme(highlight_cmds, terminal_colors_variables)
 
     ftplugins_highlights = get_ftplugins_highlights(color_table, sections["ftplugins"])
     write_ftplugins(ftplugins_highlights)

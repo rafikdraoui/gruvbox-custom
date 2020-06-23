@@ -387,18 +387,6 @@ highlights: # {{{1
   SignifySignDelete:
     link: GruvboxRedSign
 
-  # FZF {{{3
-  # See also `fzf_colors` section below
-  Fzf1:
-    fg: blue
-    bg: bg1
-  Fzf2:
-    fg: orange
-    bg: bg1
-  Fzf3:
-    fg: fg4
-    bg: bg1
-
   # ALE {{{3
   ALEError:
     gui: undercurl
@@ -918,17 +906,3 @@ ftplugins: # {{{1
       link: GruvboxRed
     xmlEntityPunct:
       link: GruvboxRed
-
-fzf_colors: # {{{1
-  fg: GruvboxFg1
-  bg: GruvboxBg0
-  hl: GruvboxYellow
-  fg+: GruvboxFg1
-  bg+: GruvboxBg1
-  hl+: GruvboxYellow
-  info: GruvboxBlue
-  prompt: GruvboxFg4
-  pointer: GruvboxBlue
-  marker: GruvboxOrange
-  spinner: GruvboxYellow
-  header: GruvboxBg3

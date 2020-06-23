@@ -112,9 +112,6 @@ hi! link SneakLabel Search
 hi! link SignifySignAdd GruvboxGreenSign
 hi! link SignifySignChange SignColumn
 hi! link SignifySignDelete GruvboxRedSign
-hi Fzf1 guifg=#83a598 guibg=#3c3836
-hi Fzf2 guifg=#fe8019 guibg=#3c3836
-hi Fzf3 guifg=#a89984 guibg=#3c3836
 hi ALEError gui=undercurl guisp=#fb4934
 hi ALEWarning gui=undercurl guisp=#fabd2f
 hi ALEInfo gui=undercurl guisp=#83a598
@@ -146,17 +143,3 @@ let g:terminal_color_12 = '#83a598'
 let g:terminal_color_13 = '#d3869b'
 let g:terminal_color_14 = '#8ec07c'
 let g:terminal_color_15 = '#ebdbb2'
-let g:fzf_colors = {
-\ 'fg': ['fg', 'GruvboxFg1'],
-\ 'bg': ['fg', 'GruvboxBg0'],
-\ 'hl': ['fg', 'GruvboxYellow'],
-\ 'fg+': ['fg', 'GruvboxFg1'],
-\ 'bg+': ['fg', 'GruvboxBg1'],
-\ 'hl+': ['fg', 'GruvboxYellow'],
-\ 'info': ['fg', 'GruvboxBlue'],
-\ 'prompt': ['fg', 'GruvboxFg4'],
-\ 'pointer': ['fg', 'GruvboxBlue'],
-\ 'marker': ['fg', 'GruvboxOrange'],
-\ 'spinner': ['fg', 'GruvboxYellow'],
-\ 'header': ['fg', 'GruvboxBg3'],
-\ }
