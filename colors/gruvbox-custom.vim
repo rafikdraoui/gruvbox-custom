@@ -124,7 +124,6 @@ hi! link ALEInfoSign GruvboxBlueSign
 hi! link ALEVirtualTextError GruvboxRed
 hi! link ALEVirtualTextWarning GruvboxYellow
 hi! link ALEVirtualTextInfo GruvboxBlue
-hi! link TextYank PmenuSel
 hi! link diffAdded GruvboxGreen
 hi! link diffRemoved GruvboxRed
 hi! link diffChanged GruvboxAqua

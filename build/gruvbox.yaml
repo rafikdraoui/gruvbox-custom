@@ -422,10 +422,6 @@ highlights: # {{{1
   ALEVirtualTextInfo:
     link: GruvboxBlue
 
-  # highlight_yank {{{3
-  TextYank:
-    link: PmenuSel
-
   # `diff` filetype {{{2
   # Kept here instead of `ftplugins` because the highlight groups are needed by
   # several other filetypes (for example `gitcommit`)
