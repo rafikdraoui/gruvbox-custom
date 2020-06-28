@@ -24,14 +24,14 @@ hi GruvboxAqua guifg=#8ec07c
 hi GruvboxAquaBold guifg=#8ec07c gui=bold
 hi GruvboxOrange guifg=#fe8019
 hi GruvboxOrangeBold guifg=#fe8019 gui=bold
-hi GruvboxRedSign guifg=#fb4934 guibg=#3c3836
-hi GruvboxGreenSign guifg=#b8bb26 guibg=#3c3836
-hi GruvboxYellowSign guifg=#fabd2f guibg=#3c3836
-hi GruvboxBlueSign guifg=#83a598 guibg=#3c3836
-hi GruvboxPurpleSign guifg=#d3869b guibg=#3c3836
-hi GruvboxAquaSign guifg=#8ec07c guibg=#3c3836
+hi GruvboxRedSign guifg=#fb4934 guibg=#282828
+hi GruvboxGreenSign guifg=#b8bb26 guibg=#282828
+hi GruvboxYellowSign guifg=#fabd2f guibg=#282828
+hi GruvboxBlueSign guifg=#83a598 guibg=#282828
+hi GruvboxPurpleSign guifg=#d3869b guibg=#282828
+hi GruvboxAquaSign guifg=#8ec07c guibg=#282828
 hi Normal guifg=#ebdbb2 guibg=#1d2021
-hi CursorLine guibg=#3c3836
+hi CursorLine guibg=#504945
 hi! link CursorColumn CursorLine
 hi TabLineFill guifg=#7c6f64 guibg=#3c3836
 hi TabLineSel guifg=#b8bb26 guibg=#3c3836
@@ -39,7 +39,7 @@ hi! link TabLine TabLineFill
 hi MatchParen guibg=#665c54 gui=bold
 hi ColorColumn guibg=#3c3836
 hi Conceal guifg=#83a598 guibg=NONE
-hi CursorLineNr guifg=#fabd2f guibg=#3c3836
+hi CursorLineNr guifg=#fabd2f
 hi! link NonText GruvboxBg2
 hi! link SpecialKey GruvboxFg4
 hi Visual guibg=#665c54 gui=inverse
@@ -60,8 +60,8 @@ hi! link ModeMsg GruvboxYellowBold
 hi! link Question GruvboxOrangeBold
 hi! link WarningMsg GruvboxRedBold
 hi LineNr guifg=#7c6f64
-hi SignColumn guifg=NONE guibg=#3c3836
-hi Folded guifg=#928374 guibg=#3c3836 gui=italic
+hi SignColumn guifg=NONE guibg=#282828
+hi Folded guifg=#928374 guibg=#282828 gui=italic
 hi FoldColumn guifg=#928374 guibg=#3c3836
 hi Cursor guifg=NONE guibg=NONE gui=inverse
 hi! link vCursor Cursor

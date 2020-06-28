@@ -59,6 +59,7 @@ colors: # {{{1
     purple: bright_purple
     aqua: bright_aqua
     orange: bright_orange
+    sign: dark0
 
   terminal:
     color_0: dark0_hard
@@ -139,22 +140,22 @@ highlights: # {{{1
     gui: bold
   GruvboxRedSign:
     fg: red
-    bg: bg1
+    bg: sign
   GruvboxGreenSign:
     fg: green
-    bg: bg1
+    bg: sign
   GruvboxYellowSign:
     fg: yellow
-    bg: bg1
+    bg: sign
   GruvboxBlueSign:
     fg: blue
-    bg: bg1
+    bg: sign
   GruvboxPurpleSign:
     fg: purple
-    bg: bg1
+    bg: sign
   GruvboxAquaSign:
     fg: aqua
-    bg: bg1
+    bg: sign
 
   # Colorscheme {{{2
   # General UI {{{3
@@ -162,7 +163,7 @@ highlights: # {{{1
     fg: fg1
     bg: bg0
   CursorLine:
-    bg: bg1
+    bg: bg2
   CursorColumn:
     link: CursorLine
   TabLineFill:
@@ -183,7 +184,6 @@ highlights: # {{{1
     bg: NONE
   CursorLineNr:
     fg: yellow
-    bg: bg1
   NonText:
     link: GruvboxBg2
   SpecialKey:
@@ -243,10 +243,10 @@ highlights: # {{{1
     fg: bg4
   SignColumn:
     fg: NONE
-    bg: bg1
+    bg: sign
   Folded:
     fg: gray
-    bg: bg1
+    bg: sign
     gui: italic
   FoldColumn:
     fg: gray
