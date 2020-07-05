@@ -31,6 +31,7 @@ hi GruvboxBlueSign guifg=#83a598 guibg=#282828
 hi GruvboxPurpleSign guifg=#d3869b guibg=#282828
 hi GruvboxAquaSign guifg=#8ec07c guibg=#282828
 hi Normal guifg=#ebdbb2 guibg=#1d2021
+hi NormalNC guifg=#bdae93 guibg=#1d2021
 hi CursorLine guibg=#504945
 hi! link CursorColumn CursorLine
 hi TabLineFill guifg=#7c6f64 guibg=#3c3836
@@ -63,10 +64,7 @@ hi LineNr guifg=#7c6f64
 hi SignColumn guifg=NONE guibg=#282828
 hi Folded guifg=#928374 guibg=#282828 gui=italic
 hi FoldColumn guifg=#928374 guibg=#3c3836
-hi Cursor guifg=NONE guibg=NONE gui=inverse
-hi! link vCursor Cursor
-hi! link iCursor Cursor
-hi! link lCursor Cursor
+hi! link TermCursorNC IncSearch
 hi! link Special GruvboxOrange
 hi Comment guifg=#928374 gui=italic
 hi Todo guifg=fg guibg=bg gui=bold,italic

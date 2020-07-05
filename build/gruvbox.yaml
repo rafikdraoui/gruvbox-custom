@@ -162,6 +162,9 @@ highlights: # {{{1
   Normal:
     fg: fg1
     bg: bg0
+  NormalNC:
+    fg: fg3
+    bg: bg0
   CursorLine:
     bg: bg2
   CursorColumn:
@@ -251,18 +254,8 @@ highlights: # {{{1
   FoldColumn:
     fg: gray
     bg: bg1
-
-  # Cursor {{{3
-  Cursor:
-    fg: NONE
-    bg: NONE
-    gui: inverse
-  vCursor:
-    link: Cursor
-  iCursor:
-    link: Cursor
-  lCursor:
-    link: Cursor
+  TermCursorNC:
+    link: IncSearch
 
   # Syntax highlighting {{{3
   Special:
