@@ -105,11 +105,10 @@ hi SpellCap gui=undercurl guisp=#83a598
 hi SpellBad gui=undercurl guisp=#fb4934
 hi SpellLocal gui=undercurl guisp=#8ec07c
 hi SpellRare gui=undercurl guisp=#d3869b
-hi! link Sneak Search
-hi! link SneakLabel Search
 hi! link SignifySignAdd GruvboxGreenSign
 hi! link SignifySignChange SignColumn
 hi! link SignifySignDelete GruvboxRedSign
+hi CleverFDefaultLabel guifg=#fabd2f gui=bold,underline
 hi ALEError gui=undercurl guisp=#fb4934
 hi ALEWarning gui=undercurl guisp=#fabd2f
 hi ALEInfo gui=undercurl guisp=#83a598

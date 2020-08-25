@@ -366,12 +366,6 @@ highlights: # {{{1
     guisp: purple
 
   # Plugins {{{2
-  # Sneak {{{3
-  Sneak:
-    link: Search
-  SneakLabel:
-    link: Search
-
   # Signify {{{3
   SignifySignAdd:
     link: GruvboxGreenSign
@@ -379,6 +373,11 @@ highlights: # {{{1
     link: SignColumn
   SignifySignDelete:
     link: GruvboxRedSign
+
+  # clever-f {{{3
+  CleverFDefaultLabel:
+    fg: yellow
+    gui: bold,underline
 
   # ALE {{{3
   ALEError:
